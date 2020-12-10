@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+body
+{
+	color:white;
+	text-align: right;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+.textContainer
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	padding: 6px 12px;
+	display: inline-block;
+	animation: fadeIn 1s 300s ease-in-out backwards, fadeIn 1s 314s ease-in-out reverse forwards;
+}
+.textYoutube
+{
+	background: red;
+}
+.textTwitter
+{
+	background: #1da1f2;
+}
+.textContainer span
+{
+	margin: 0 6px;
+	animation: fadeIn 1s 301.5s backwards, fadeIn 1s 313.5s reverse forwards;
+}
+.textIcon
+{
+	margin-right: 6px;
+	animation: iconWiggle 2s 303s infinite;
+}
+
+@keyframes fadeIn
+{
+    from
+	{
+		filter:opacity(0);
+		transform: translateY(24px);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+@keyframes iconWiggle
+{
+	0% 		{transform: rotate(0deg);}
+	10% 	{transform: rotate(25deg);}
+	20% 	{transform: rotate(-25deg);}
+	30% 	{transform: rotate(10deg);}
+	40% 	{transform: rotate(-10deg);}
+	50% 	{transform: rotate(5deg);}
+	60% 	{transform: rotate(-5deg);}
+	70% 	{transform: rotate(0deg);}
+	100% 	{transform: rotate(0deg);}
+}
